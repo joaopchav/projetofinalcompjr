@@ -54,7 +54,7 @@
     position: fixed;
     width: 100%;
     z-index: 100;
-    padding: 15px 0;
+    padding: 20px 0;
     transition: all 0.3s ease;
     justify-content: center;
 }
@@ -111,8 +111,21 @@
   
   .logo {
     height: 45px;
+    margin-right: 100px;
   }
 
+  .nav-buttons {
+    display: flex;
+    gap:30px;
+    margin-right: 100px;
+  }
+  
+  .nav-buttons button {
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+  }
   /* Hero */
 
   #hero {
@@ -260,7 +273,7 @@
     border-radius: 5px;
     overflow: hidden;
     transition: transform 0.3s ease;
-    width: 300px;
+    width: 240px;
     margin: 0 auto;
   }
 
@@ -274,18 +287,18 @@
   }
 
   #services .card-content h3 {
-    font-size: 1.5rem;
+    font-size: 17.9px;
     margin-bottom: 1rem;
   }
 
   #services .card-content p {
-    font-size: 1.1rem;
+    font-size: 16px;
     margin-bottom: 1.5rem;
   }
 
   .card-link {
     display: block;
-    width: 100%;
+    width: 120%;
     height: 100%;
     text-decoration: none;
     color: inherit;
@@ -445,8 +458,12 @@
     background-color: #0F6B79;
     color:white;
   }
-  
-  
+
+  .error {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+  }
   
   /* Footer */
   
@@ -671,3 +688,109 @@
   text-decoration: none;
   color: inherit;
 }
+
+/* Botões de alternância */
+button {
+  padding: 10px 5px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.dark-theme button {
+  color: #fff;
+}
+
+.light-theme button {
+  color: #444;
+  border: 1px solid #444;
+}
+
+.dark-theme {
+    /* Estilos para o tema escuro */
+    background-color: #13131F;
+    color: #ffffff;
+  }
+  
+  .light-theme {
+    /* Estilos para o tema claro */
+    background-color: whitesmoke;
+    color: #13131F;
+  }
+
+  .light-theme .hero-title {
+    color: #13131F;
+  }
+
+  .light-theme .Menu-sobre{
+    color: #13131F;;
+  }
+
+  .light-theme #services h2 {
+    color:#13131F;;
+  }
+
+  .light-theme #services h3 {
+    color: #13131F;;
+  }
+
+  .light-theme #services .card {
+    background-color: whitesmoke;
+  }
+
+  .light-theme .container-sobre {
+    background-color: whitesmoke;
+  }
+
+  .light-theme .menu-inicial .row .success-card{
+    background-color: whitesmoke;
+  }
+
+  .light-theme #projects .card {
+    background-color: whitesmoke;
+  }
+
+  .light-theme #projects h2 {
+    color: #13131F;
+  }
+
+  .light-theme #projects h3 {
+    color: #13131F;
+  }
+
+  .light-theme .success-card {
+    background-color: whitesmoke;
+  }
+
+  .light-theme #navbar {
+    background-color: #f5f5f5;
+}
+
+.light-theme  #navbar .nav-menu li a {
+    color: #13131F;
+  }
+  
+  .light-theme .hero-button {
+    color: #fff;
+    background-color: #0056b3;
+  }
+  
+  .light-theme .hero-button:hover {
+    background-color: #007bff;
+  }
+
+  .light-theme #contact .send-button {
+    background-color: #0F6B79;
+
+  }
+  
+  .light-theme #contact .send-button:hover {
+    background-color: #1793A6;
+  }
+
+  .light-theme #footer {
+    background-color: whitesmoke;
+    color: #13131F;
+    padding: 30px 0;
+    font-size: 1rem;
+  }

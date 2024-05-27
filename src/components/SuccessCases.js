@@ -4,13 +4,13 @@ import imagem2 from '../assets/imagem2.jpeg';
 import imagem3 from '../assets/imagem3.jpeg';
 import imagem4 from '../assets/imagem4.jpeg';
 
-const SuccessCases = () => {
+const SuccessCases = ({ language }) => {
   return (
     <section id="success-cases">
       <div className="container">
         <div className="row">
           <div className="col-lg-12">
-            <h2>Cases de Sucesso</h2>
+            <h2>{language === 'pt' ? 'Cases de Sucesso' : 'Success Cases'}</h2>
           </div>
         </div>
         <div className="row">

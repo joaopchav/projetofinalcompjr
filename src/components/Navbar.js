@@ -1,26 +1,38 @@
 import React from 'react';
-import logo from '../assets/comp.png';
+import compLogo from '../assets/comp.png';
+import comp1Logo from '../assets/comp1.png'; // Nova logo para o light theme
+import temaIcon from '../assets/lua1.png';
+import linguagemIcon from '../assets/linguagem.png';
 
-const Navbar = () => {
+const Navbar = ({ toggleTheme, toggleLanguage, isDarkTheme, language }) => {
+  const handleThemeToggle = () => {
+    toggleTheme();
+  };
+
+  const handleLanguageToggle = () => {
+    toggleLanguage();
+  };
+
   return (
-    <nav id="navbar">
+    <nav id="navbar" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
       <div className="container">
-        <div className="row align-center">
-          <div className="logo-container">
-            <a href="#hero">
-              <i className="icon"></i>
-              <img src={logo} className="logo" alt="Logo" />
-            </a>
-          </div>
-          <ul id="nav-menu" className="nav-menu">
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#about-us">Sobre nós</a></li>
-            <li><a href="#services">Serviços</a></li>
-            <li><a href="#projects">Projetos</a></li>
-            <li><a href="#success-cases">Cases</a></li>
-            <li><a href="#contact">Entre em Contato</a></li>
-          </ul>
-        </div>
+        <ul className="nav-menu" style={{ display: 'flex', alignItems: 'center' }}>
+          <img src={isDarkTheme ? compLogo : comp1Logo} alt="Logo" className="logo" /> {/* Altera a logo baseado no tema */}
+          <li><a href="#hero">{language === 'pt' ? 'Início' : 'Home'}</a></li>
+          <li><a href="#about-us">{language === 'pt' ? 'Sobre' : 'About'}</a></li>
+          <li><a href="#services">{language === 'pt' ? 'Serviços' : 'Services'}</a></li>
+          <li><a href="#projects">{language === 'pt' ? 'Projetos' : 'Projects'}</a></li>
+          <li><a href="#success-cases">{language === 'pt' ? 'Casos de Sucesso' : 'Success Cases'}</a></li>
+          <li><a href="#contact">{language === 'pt' ? 'Contato' : 'Contact'}</a></li>
+        </ul>
+      </div>
+      <div className="nav-buttons">
+        <button onClick={handleThemeToggle} style={{ border: 'none', background: 'none' }}>
+          <img src={temaIcon} alt="Tema" style={{ width: '24px', height: '24px' }} />
+        </button>
+        <button onClick={handleLanguageToggle} style={{ border: 'none', background: 'none' }}>
+          <img src={linguagemIcon} alt="Linguagem" style={{ width: '24px', height: '24px' }} />
+        </button>
       </div>
     </nav>
   );
