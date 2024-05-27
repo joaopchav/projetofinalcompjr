@@ -1,5 +1,5 @@
 import React from 'react';
-import heroImage from '../assets/teste3.png'; // Certifique-se de que o caminho para a imagem esteja correto
+import heroImage from '../assets/teste3.png';
 
 const Hero = () => {
   return (

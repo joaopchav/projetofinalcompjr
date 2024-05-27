@@ -1,7 +1,7 @@
 import React from 'react';
-import imagem1 from '../assets/imagem1.jpeg';
-import imagem2 from '../assets/imagem2.jpeg';
-import imagem3 from '../assets/imagem3.jpeg';
+import imagem1 from '../assets/foto1.jpeg';
+import imagem2 from '../assets/foto2.jpeg';
+import imagem3 from '../assets/foto3.jpeg';
 
 const AboutUs = () => {
   return (
@@ -19,7 +19,7 @@ const AboutUs = () => {
             </div>
             <div className="row">
           <div className="col-lg-3 col-md-6">
-            <a href="http://seti.ufla.br/" className="card-link">
+            <a href="http://instagram.com/comp.ufla" className="card-link">
               <div className="success-card">
                 <div className="card-content">
                   <img src={imagem1} alt="Serviço Estático" />
@@ -28,7 +28,7 @@ const AboutUs = () => {
             </a>
           </div>
           <div className="col-lg-3 col-md-6">
-            <a href="https://compweek.com.br/" className="card-link">
+            <a href="http://instagram.com/comp.ufla" className="card-link">
               <div className="success-card">
                 <div className="card-content">
                   <img src={imagem2} alt="Serviço Dinâmico" />
@@ -37,10 +37,10 @@ const AboutUs = () => {
             </a>
           </div>
           <div className="col-lg-3 col-md-6">
-            <a href="https://compweek.com.br/" className="card-link">
+            <a href="http://instagram.com/comp.ufla" className="card-link">
               <div className="success-card">
                 <div className="card-content">
-                  <img src={imagem2} alt="Serviço Dinâmico" />
+                  <img src={imagem3} alt="Serviço Dinâmico" />
                 </div>
               </div>
             </a>

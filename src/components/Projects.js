@@ -21,7 +21,7 @@ const Projects = () => {
               <div className="card-content">
                 <h3>Gars-ON</h3>
                 <p>A Gars-On é mais do que uma plataforma de recrutamento. Somos catalisadores de oportunidades, conectando donos de restaurantes a garçons qualificados em tempo real.</p>
-                <a href="#" className="botoes">Ver projeto</a>
+                <a href="https://garsonline.com.br/" className="botoes">Ver projeto</a>
               </div>
             </div>
           </div>
@@ -33,7 +33,7 @@ const Projects = () => {
               <div className="card-content">
                 <h3>Projeto Niara</h3>
                 <p>O Projeto Niara é um dos projetos da Enactus UFLA. Nós buscamos ressignificar a trajetória de mulheres que sofrem algum tipo de violência de gênero.</p>
-                <a href="#" className="botoes">Ver projeto</a>
+                <a href="https://projetoniara.com.br/" className="botoes">Ver projeto</a>
               </div>
             </div>
           </div>
@@ -45,7 +45,7 @@ const Projects = () => {
               <div className="card-content">
                 <h3>Ponte de Concreto</h3>
                 <p>Fundada em 1999, a “Ponte de Concreto” é muito mais do que uma empresa de construção. Com base em Luminárias, Minas Gerais, nossa paixão é unir pessoas e lugares através de estruturas sólidas.</p>
-                <a href="#" className="botoes">Ver projeto</a>
+                <a href="https://pontedeconcreto.com.br/" className="botoes">Ver projeto</a>
               </div>
             </div>
           </div>
