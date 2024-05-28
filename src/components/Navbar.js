@@ -1,4 +1,6 @@
+// Navbar.js
 import React from 'react';
+import { Link } from 'react-router-dom';
 import compLogo from '../assets/comp.png';
 import comp1Logo from '../assets/comp1.png'; // Nova logo para o light theme
 import temaIcon from '../assets/lua1.png';
@@ -24,7 +26,7 @@ const Navbar = ({ toggleTheme, toggleLanguage, isDarkTheme, language }) => {
           <li><a href="#projects">{language === 'pt' ? 'Projetos' : 'Projects'}</a></li>
           <li><a href="#success-cases">{language === 'pt' ? 'Casos de Sucesso' : 'Success Cases'}</a></li>
           <li><a href="#contact">{language === 'pt' ? 'Contato' : 'Contact'}</a></li>
-        </ul>
+        </ul> 
       </div>
       <div className="nav-buttons">
         <button onClick={handleThemeToggle} style={{ border: 'none', background: 'none' }}>

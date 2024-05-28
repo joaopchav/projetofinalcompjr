@@ -1,29 +1,25 @@
-// validation.js
-export const validateEmail = (email) => {
-    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return re.test(String(email).toLowerCase());
-  };
+// services/validacao.js
+
+export const validateForm = (formData, language) => {
+  const errors = {};
   
-  export const validatePhone = (phone) => {
-    const re = /^\(?\d{2}\)?[\s-]?\d{4,5}-?\d{4}$/;
-    return re.test(String(phone));
-  };
+  if (!formData.name) {
+    errors.name = language === 'pt' ? 'Nome é obrigatório' : 'Name is required';
+  }
+  if (!formData.email) {
+    errors.email = language === 'pt' ? 'Email é obrigatório' : 'Email is required';
+  } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+    errors.email = language === 'pt' ? 'Email inválido' : 'Invalid email';
+  }
+  if (!formData.phone) {
+    errors.phone = language === 'pt' ? 'Telefone é obrigatório' : 'Phone is required';
+  }
+  if (!formData.subject) {
+    errors.subject = language === 'pt' ? 'Assunto é obrigatório' : 'Subject is required';
+  }
+  if (!formData.message) {
+    errors.message = language === 'pt' ? 'Mensagem é obrigatória' : 'Message is required';
+  }
   
-  export const validateForm = (formData) => {
-    const errors = {};
-    if (!formData.name) errors.name = "Nome é obrigatório.";
-    if (!formData.email) {
-      errors.email = "Email é obrigatório.";
-    } else if (!validateEmail(formData.email)) {
-      errors.email = "Email inválido.";
-    }
-    if (!formData.subject) errors.subject = "Assunto é obrigatório.";
-    if (!formData.message) errors.message = "Mensagem é obrigatória.";
-    if (!formData.phone) {
-      errors.phone = "Telefone é obrigatório.";
-    } else if (!validatePhone(formData.phone)) {
-      errors.phone = "Telefone inválido.";
-    }
-    return errors;
-  };
-  
+  return errors;
+};
