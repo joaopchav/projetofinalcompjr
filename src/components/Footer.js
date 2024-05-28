@@ -4,7 +4,7 @@ import facebookIcon from '../assets/face.png';
 import linkedinIcon from '../assets/linkedin.png';
 import twitterIcon from '../assets/twitter.png';
 import compIcon from '../assets/comp.png';
-import comp1Icon from '../assets/comp1.png'; // Nova imagem do ícone para o light theme
+import comp1Icon from '../assets/comp1.png'; 
 
 const Footer = ({ language, isDarkTheme }) => {
   return (
@@ -15,7 +15,7 @@ const Footer = ({ language, isDarkTheme }) => {
             <img
               src={isDarkTheme ? compIcon : comp1Icon}
               alt="Comp Icon"
-              style={{ width: '40px', height: '40px' }} // Fixa o tamanho do ícone
+              style={{ width: '40px', height: '40px' }} 
             />
           </p>
         </div>

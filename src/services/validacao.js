@@ -1,5 +1,3 @@
-// services/validacao.js
-
 export const validateForm = (formData, language) => {
   const errors = {};
   

@@ -23,11 +23,10 @@ const Contact = ({ language }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const errors = validateForm(formData, language); // Passa o idioma atual
+    const errors = validateForm(formData, language);
     if (Object.keys(errors).length === 0) {
       alert(language === 'pt' ? 'Formulário enviado com sucesso!' : 'Form submitted successfully!');
       setFormErrors({});
-      // Aqui você pode adicionar o código para enviar o formulário ao servidor
     } else {
       alert(language === 'pt' ? 'Erro ao enviar o formulário. Verifique os campos.' : 'Error submitting form. Please check the fields.');
       setFormErrors(errors);

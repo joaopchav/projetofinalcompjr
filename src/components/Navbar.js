@@ -1,8 +1,6 @@
-// Navbar.js
 import React from 'react';
-import { Link } from 'react-router-dom';
 import compLogo from '../assets/comp.png';
-import comp1Logo from '../assets/comp1.png'; // Nova logo para o light theme
+import comp1Logo from '../assets/comp1.png'; 
 import temaIcon from '../assets/lua1.png';
 import linguagemIcon from '../assets/linguagem.png';
 
@@ -19,7 +17,7 @@ const Navbar = ({ toggleTheme, toggleLanguage, isDarkTheme, language }) => {
     <nav id="navbar" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
       <div className="container">
         <ul className="nav-menu" style={{ display: 'flex', alignItems: 'center' }}>
-          <img src={isDarkTheme ? compLogo : comp1Logo} alt="Logo" className="logo" /> {/* Altera a logo baseado no tema */}
+          <img src={isDarkTheme ? compLogo : comp1Logo} alt="Logo" className="logo" /> {}
           <li><a href="#hero">{language === 'pt' ? 'Início' : 'Home'}</a></li>
           <li><a href="#about-us">{language === 'pt' ? 'Sobre' : 'About'}</a></li>
           <li><a href="#services">{language === 'pt' ? 'Serviços' : 'Services'}</a></li>

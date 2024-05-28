@@ -4,9 +4,8 @@ import Footer from '../components/Footer';
 import '../styles/ServicesPages.css';
 
 const DevSoft = () => {
-  const [language, setLanguage] = useState('pt'); // Estado para controlar o idioma
+  const [language, setLanguage] = useState('pt'); 
 
-  // Função para alternar o idioma
   const toggleLanguage = () => {
     setLanguage(language === 'pt' ? 'en' : 'pt');
   };

@@ -17,7 +17,7 @@ const Navbar = ({ toggleTheme, toggleLanguage, isDarkTheme, language }) => {
     <nav id="navbar" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
       <div className="container">
         <ul className="nav-menu" style={{ display: 'flex', alignItems: 'center' }}>
-          <img src={isDarkTheme ? compLogo : comp1Logo} alt="Logo" className="logo" /> {/* Altera a logo baseado no tema */}
+          <img src={isDarkTheme ? compLogo : comp1Logo} alt="Logo" className="logo" /> {}
           <li><Link to="/">{language === 'pt' ? 'Início' : 'Home'}</Link></li>
           <li><Link to="/">{language === 'pt' ? 'Sobre' : 'About'}</Link></li>
           <li><Link to="/">{language === 'pt' ? 'Serviços' : 'Services'}</Link></li>
