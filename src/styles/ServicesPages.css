@@ -31,4 +31,11 @@ body, html {
     margin-bottom: 75px;
   }
   
-  
+  #navbar {
+    background-image: linear-gradient(to right, #08090F, #252A4C);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    padding: 20px 0;
+    justify-content: center;
+}

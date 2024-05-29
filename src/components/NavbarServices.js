@@ -4,7 +4,7 @@ import compLogo from '../assets/comp.png';
 import comp1Logo from '../assets/comp1.png';
 import linguagemIcon from '../assets/linguagem.png';
 
-const Navbar = ({ toggleTheme, toggleLanguage, isDarkTheme, language }) => {
+const NavbarServices = ({ toggleTheme, toggleLanguage, isDarkTheme, language }) => {
   const handleThemeToggle = () => {
     toggleTheme();
   };
@@ -35,4 +35,4 @@ const Navbar = ({ toggleTheme, toggleLanguage, isDarkTheme, language }) => {
   );
 };
 
-export default Navbar;
+export default NavbarServices;

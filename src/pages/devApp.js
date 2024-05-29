@@ -3,6 +3,7 @@ import Navbar from '../components/NavbarServices';
 import Footer from '../components/Footer';
 import '../styles/ServicesPages.css';
 
+
 const DevApp = () => {
   const [language, setLanguage] = useState('pt'); 
 
