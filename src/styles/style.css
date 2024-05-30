@@ -50,8 +50,8 @@
   
   /* Navbar */
 
-#navbar {
-    background-color: #13131F;
+  #navbar {
+    background-image: linear-gradient(to right, #08090F, #252A4C);
     position: fixed;
     width: 100%;
     z-index: 100;
@@ -759,7 +759,7 @@ button {
 }
 
 .light-theme {
-  background: linear-gradient(112deg, #f5f5f5 1.49%, #e5e5e5 51.16%, #dddddd 99.03%);
+  background: whitesmoke;
   background-image: var(--light-bg);
   background-clip: content-box;
   background-repeat: repeat-y;
@@ -776,6 +776,10 @@ button {
   }
 
   .light-theme h2{
+    color:#13131F;
+  }
+
+  .light-theme #services h2{
     color:#13131F;
   }
 
@@ -811,9 +815,6 @@ button {
     background-color: whitesmoke;
   }
 
-  .light-theme #navbar {
-    background-color: #f5f5f5;
-}
 
 .light-theme  #navbar .nav-menu li a {
     color: #13131F;
@@ -851,7 +852,7 @@ button {
   }
 
   .light-theme #contact .form-control{
-    background-color: #13131F;
+    background-color: white;
   }
 
 /* Webkit Scrollbar */
@@ -866,3 +867,12 @@ html {
   scrollbar-color: #13131F whitesmoke;
 }
 
+.light-theme #navbar {
+  background: whitesmoke;
+  color:#13131F;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  padding: 20px 0;
+  justify-content: center;
+}
