@@ -75,5 +75,4 @@ const SuccessCases = ({ language }) => {
     </section>
   );
 };
-
 export default SuccessCases;

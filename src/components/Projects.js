@@ -54,6 +54,5 @@ const Projects = ({ language }) => {
     </section>
   );
 };
-
 export default Projects;
 

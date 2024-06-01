@@ -855,7 +855,7 @@ button {
     background-color: white;
   }
 
-/* Webkit Scrollbar */
+/* Scrollbar */
 
 ::-webkit-scrollbar-thumb {
   border-radius: 16px;

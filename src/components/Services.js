@@ -56,5 +56,4 @@ const Services = ({ language }) => {
     </section>
   );
 };
-
 export default Services;
